@@ -1,0 +1,11 @@
+<p>
+  customer-list works!
+</p>
+
+<input type="text" [(ngModel)]="data" />
+
+<br/>
+<button (click)="loadData()">Load Data</button>
+
+
+<app-create-customer *ngIf="data!==''" [nama]="'data'"></app-create-customer>

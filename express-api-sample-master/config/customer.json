@@ -1,0 +1,14 @@
+[
+    {
+        "cif": "CS-1118",
+        "firstName": "Ika",
+        "lastName": "Ayu",
+        "username": "ikayu",
+        "email": "ika@mail.com",
+        "birthDate": "2019-01-01",
+        "gender": "Male",
+        "password": "1234",
+        "address": "Karawang",
+        "telephone": "09879079"
+    }
+]

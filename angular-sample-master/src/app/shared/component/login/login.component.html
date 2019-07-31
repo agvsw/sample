@@ -1,0 +1,11 @@
+<form [formGroup]="customerFormGroup">
+  Username : <input formControlName="username" type="text"/>{{getErrorMessages(customerFormGroup.controls.username)}}
+  <br/>
+  Password : <input formControlName="password" type="password"/>  
+  <br/>
+  Retype Password : <input formControlName="retypePassword" type="password"/>{{getErrorMessages(customerFormGroup.controls.retypePassword)}}
+  <br/>
+  {{message}}
+  <br/>
+  <button (click)="login()" [disabled]="!customerFormGroup.valid">Login</button>
+</form>

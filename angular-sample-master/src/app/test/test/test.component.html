@@ -1,0 +1,35 @@
+<p>
+  test works!
+</p>
+
+<app-select ></app-select>
+
+<input type="text" [(ngModel)]="coba" />
+<br/>
+text coba : {{coba}}
+<br/>
+<ng-template [ngIf]="showDiv">
+  <div>
+    <h4 >Test ngIf</h4>
+    <h6 *ngFor="let buah of listBuah;">{{buah}}</h6>
+    {{1000 | rupiah }}
+    <table>
+      <thead>
+        <th>CIF</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Detail</th>
+      </thead>
+      {{updatingCustomer ? 'updating':''}}
+      <tbody>
+        <tr *ngFor="let cus of listCustomer">
+          <td>{{cus.cif}}</td>
+          <td>{{cus.firstName}}</td>
+          <td>{{cus.lastName}}</td>
+          <td>{{cus.balance}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>
+<button (click)="submit()" >Submit to caller</button>
